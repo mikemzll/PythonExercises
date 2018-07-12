@@ -9,10 +9,11 @@ sc = input()
 
 if ch == sc :
       print( "Congratulations! You win this time!" )
+      brake
 else:
       print( "Sorry, but you didn't guess. Try again!" )
 
-if int( ch, 32 ) > int( sc, 32 ):
+if int( ch, 32 ) < int( sc, 32 ):
       print( "You are too low" )
-elif int( ch, 32 ) < int( sc, 32 ):
+elif int( ch, 32 ) > int( sc, 32 ):
       print( "You are to high!" )
